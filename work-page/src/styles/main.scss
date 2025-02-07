@@ -1,6 +1,6 @@
-@use "./constants/constants-main.scss";
-@use "./base/base-main.scss";
-@use "./state/state-main.scss";
-@use "./components/components-main.scss";
-@use "./layout/layout-main.scss";
-@use "./mixins/mixins-main.scss";
+@import "./constants/constants-main";
+@import "./base/base-main";
+@import "./state/state-main";
+@import "./components/components-main";
+@import "./layout/layout-main";
+@import "./mixins/mixins-main";
