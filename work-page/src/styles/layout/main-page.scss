@@ -49,7 +49,8 @@
 .work-page__social-media {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-top: 16px;
 
     button {
         display: inherit;
