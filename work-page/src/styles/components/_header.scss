@@ -16,6 +16,11 @@
 }
 
 .work-page__header--navigation {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 40%;
+    gap: 16px;
+
     a {
         color: $defaultFontColor;
         text-decoration: none;
