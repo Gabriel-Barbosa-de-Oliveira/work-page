@@ -1,0 +1,37 @@
+.work-page__header {
+    height: 80px;
+    // background-color: #202235;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.work-page__header--logo {
+    width: 40px;
+    height: 40px;
+}
+
+.work-page__header--navigation {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 40%;
+    gap: 16px;
+
+    a {
+        color: $defaultFontColor;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 8px 0;
+        position: relative;
+        text-transform: uppercase;
+        transition: all .4s ease;
+    }
+
+}

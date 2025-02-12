@@ -1,0 +1,88 @@
+.work-page__intro {
+    padding: 100px 32px 0 32px;
+}
+
+.work-page__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 50px;
+        color: $secondaryFontColor
+    }
+
+    p {
+
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: .01em;
+        line-height: 30px;
+        text-align: justify;
+    }
+}
+
+.work-page__tag {
+    display: flex;
+    // border: 1px solid rgba(7,136,255,.2);
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(7, 136, 255, .2);
+    width: 155px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.work-page__aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.work-page__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+
+    button {
+        display: inherit;
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: inline-flex;
+        height: 46px;
+        justify-content: center;
+        margin-right: 8px;
+        position: relative;
+        top: 0;
+        transition: top .35s ease;
+        width: 46px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        top: -5px;
+        filter: opacity(80%);
+    }
+}
+
+.work-page__social-media--linkedin {
+    background-color: #1275b1;
+}
+
+.work-page__social-media--vercel {
+    background-color: #000;
+}
+
+.work-page__social-media--instagram {
+    background:
+        linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
