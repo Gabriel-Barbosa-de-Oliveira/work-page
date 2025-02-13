@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { ionLogoLinkedin, ionLogoVercel, ionLogoInstagram } from '@ng-icons/ionicons'
+import { ionLogoLinkedin, ionLogoInstagram, ionLogoGithub } from '@ng-icons/ionicons'
 @Component({
   selector: 'work-page-intro',
   imports: [NgIcon],
   templateUrl: './intro.component.html',
   styleUrl: './intro.component.scss',
-  providers: provideIcons({ ionLogoLinkedin, ionLogoVercel, ionLogoInstagram })
+  providers: provideIcons({ ionLogoLinkedin, ionLogoInstagram, ionLogoGithub })
 })
 export class IntroComponent {
 
