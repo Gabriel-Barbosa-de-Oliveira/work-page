@@ -3,47 +3,14 @@
     <h2>Skill-Set</h2>
     <div class="work-page__skill-set--technologies">
 
-        <div class="work-page__skill-set--technology-item">
-            <ng-icon name="ionLogoGithub" [size]="'40px'" color="#fff"></ng-icon>
-            <span>Github Version Control</span>
-            <p>TIt is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
+        <ng-container *ngFor="let skill of skills; let i = index">
 
-        </div>
-        <div class="work-page__skill-set--technology-item">
-            <ng-icon name="ionLogoGithub" [size]="'40px'" color="#fff"></ng-icon>
-            <span>Github Version Control</span>
-            <p>TIt is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
+            <div class="work-page__skill-set--technology-item">
+                <ng-icon [name]="skill.iconName" [size]="'40px'" color="#fff"></ng-icon>
+                <span>{{skill.technologyName}}</span>
+                <p>{{skill.skillDescription}}</p>
 
-        </div>
-        <div class="work-page__skill-set--technology-item">
-            <ng-icon name="ionLogoGithub" [size]="'40px'" color="#fff"></ng-icon>
-            <span>Github Version Control</span>
-            <p>TIt is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-
-        </div>
-        <div class="work-page__skill-set--technology-item">
-            <ng-icon name="ionLogoGithub" [size]="'40px'" color="#fff"></ng-icon>
-            <span>Github Version Control</span>
-            <p>TIt is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-
-        </div>
-        <div class="work-page__skill-set--technology-item">
-            <ng-icon name="ionLogoGithub" [size]="'40px'" color="#fff"></ng-icon>
-            <span>Github Version Control</span>
-            <p>TIt is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-
-        </div>
-        <div class="work-page__skill-set--technology-item">
-            <ng-icon name="ionLogoGithub" [size]="'40px'" color="#fff"></ng-icon>
-            <span>Github Version Control</span>
-            <p>TIt is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-
-        </div>
+            </div>
+        </ng-container>
     </div>
 </section>
