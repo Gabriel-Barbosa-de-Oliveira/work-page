@@ -1,5 +1,5 @@
 .work-page__intro {
-    padding: 100px 32px 0 32px;
+    padding: 100px 40px 0 40px;
 }
 
 .work-page__content {
@@ -15,8 +15,15 @@
     }
 
     h2 {
+        overflow: hidden;
+        border-right: .15em solid $secondaryFontColor; 
+        white-space: nowrap; 
         font-size: 50px;
-        color: $secondaryFontColor
+        width: fit-content;
+        color: $secondaryFontColor;
+        padding-right: 16px;
+        animation: typing 2s steps(40, end),
+            blink-caret .75s step-end infinite; 
     }
 
     p {
@@ -26,6 +33,30 @@
         letter-spacing: .01em;
         line-height: 30px;
         text-align: justify;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 430px;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: $secondaryFontColor;
     }
 }
 
@@ -52,7 +83,8 @@
     justify-content: flex-start;
     margin-top: 16px;
 
-    button {
+    a {
+        text-decoration: none;
         display: inherit;
         align-items: center;
         border: 2px solid #fff;
@@ -68,7 +100,7 @@
         cursor: pointer;
     }
 
-    button:hover {
+    a:hover {
         top: -5px;
         filter: opacity(80%);
     }
