@@ -1,0 +1,120 @@
+.work-page__intro {
+    padding: 100px 40px 0 40px;
+}
+
+.work-page__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        overflow: hidden;
+        border-right: .15em solid $secondaryFontColor; 
+        white-space: nowrap; 
+        font-size: 50px;
+        width: fit-content;
+        color: $secondaryFontColor;
+        padding-right: 16px;
+        animation: typing 2s steps(40, end),
+            blink-caret .75s step-end infinite; 
+    }
+
+    p {
+
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: .01em;
+        line-height: 30px;
+        text-align: justify;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 430px;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: $secondaryFontColor;
+    }
+}
+
+.work-page__tag {
+    display: flex;
+    // border: 1px solid rgba(7,136,255,.2);
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(7, 136, 255, .2);
+    width: 155px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.work-page__aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.work-page__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+
+    a {
+        text-decoration: none;
+        display: inherit;
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: inline-flex;
+        height: 46px;
+        justify-content: center;
+        margin-right: 8px;
+        position: relative;
+        top: 0;
+        transition: top .35s ease;
+        width: 46px;
+        cursor: pointer;
+    }
+
+    a:hover {
+        top: -5px;
+        filter: opacity(80%);
+    }
+}
+
+.work-page__social-media--linkedin {
+    background-color: #1275b1;
+}
+
+.work-page__social-media--vercel {
+    background-color: #000;
+}
+
+.work-page__social-media--instagram {
+    background:
+        linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}

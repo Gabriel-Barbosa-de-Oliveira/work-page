@@ -1,0 +1,40 @@
+.work-page__skill-set{
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    h2{
+        margin: 64px 0;
+        font-size: 60px;
+    }
+}
+
+.work-page__skill-set--technologies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    align-items: center;
+    justify-items: center;
+}
+
+.work-page__skill-set--technology-item {
+    height: 160px;
+    width: 160px;
+    padding: 32px;
+    background-color: $highlitedBackgroundColor;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    box-shadow: rgba(55, 55, 55, 0.075) 0px 0.125rem 0.25rem;
+
+    span{
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
