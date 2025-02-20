@@ -1,3 +1,9 @@
+.work-page__main {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
 .work-page__intro {
     padding: 100px 40px 0 40px;
 }
@@ -16,14 +22,14 @@
 
     h2 {
         overflow: hidden;
-        border-right: .15em solid $secondaryFontColor; 
-        white-space: nowrap; 
+        border-right: .15em solid $secondaryFontColor;
+        white-space: nowrap;
         font-size: 50px;
         width: fit-content;
         color: $secondaryFontColor;
         padding-right: 16px;
         animation: typing 2s steps(40, end),
-            blink-caret .75s step-end infinite; 
+            blink-caret .75s step-end infinite;
     }
 
     p {

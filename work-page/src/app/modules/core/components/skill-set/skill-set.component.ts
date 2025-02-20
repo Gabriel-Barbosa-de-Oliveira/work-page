@@ -4,10 +4,11 @@ import { ionLogoAngular, ionLogoCss3, ionLogoGithub, ionLogoHtml5, ionLogoJavasc
 import { Skill } from '../../interfaces/skills';
 import { Skills } from '../../constants/skills';
 import { CommonModule } from '@angular/common';
+import { SectionTitleComponent } from "../section-title/section-title.component";
 
 @Component({
   selector: 'work-page-skill-set',
-  imports: [NgIcon, CommonModule],
+  imports: [NgIcon, CommonModule, SectionTitleComponent],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
   standalone: true,
