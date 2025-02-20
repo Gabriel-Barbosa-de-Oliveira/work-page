@@ -15,7 +15,7 @@ export class HeaderComponent {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event & { target: Document }): void {
     const scrollTop = event.target.documentElement.scrollTop;
-    if (scrollTop !== 0) {
+    if (scrollTop > 100) {
       this.setCustomBackground()
     } else {
       this.clearCustomBackground()
@@ -32,11 +32,9 @@ export class HeaderComponent {
 
 
 
-  public scrollIntoView(sectionId: string, resetHeader?: boolean) {
+  public scrollIntoView(sectionId: string) {
     const section = document.getElementById(sectionId);
     section?.scrollIntoView({ block: 'end', behavior: 'smooth' })
-    // if (resetHeader)
-    //   this.clearCustomBackground()
   }
 
 }
