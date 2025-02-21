@@ -12,22 +12,23 @@
 
 .work-page__skill-set--technologies {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+    align-content: center;
+    justify-content: start;
 }
 
 .work-page__skill-set--technology-item {
-    height: 160px;
-    width: 160px;
+    height: 250px;
+    width: 250px;
     padding: 32px;
     background-color: $highlitedBackgroundColor;
     display: flex;
     flex-direction: column;
     gap: 16px;
     flex-wrap: nowrap;
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: rgba(55, 55, 55, 0.075) 0px 0.125rem 0.25rem;
 
     span{
@@ -35,7 +36,7 @@
     }
 
     p {
-        font-size: 12px;
+        font-size: 14px;
         text-align: left;
     }
 }
