@@ -12,15 +12,16 @@
 
 .work-page__skill-set--technologies {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+    align-content: center;
+    justify-content: start;
 }
 
 .work-page__skill-set--technology-item {
-    height: 160px;
-    width: 160px;
+    height: 250px;
+    width: 250px;
     padding: 32px;
     background-color: $highlitedBackgroundColor;
     display: flex;

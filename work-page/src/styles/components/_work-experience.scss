@@ -2,14 +2,20 @@
     padding: 0 40px;
 }
 
+.work-page__companies--descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
 .work-page__company {
     background-color: $highlitedBackgroundColor;
     width: 100%;
     display: grid;
-    grid-template-columns: auto 1fr;    
+    grid-template-columns: auto 1fr;
     padding: 32px;
     gap: 32px;
-    box-sizing: border-box;
     border-radius: 8px;
 }
 
@@ -28,14 +34,18 @@
         font-size: 20px;
     }
 
-    .work-page__company-presentation--position{
+    .work-page__company-presentation--position {
         display: flex;
         flex-direction: column;
         font-size: 14px;
         text-transform: uppercase;
     }
- 
-    .work-page__company-presentation--tag{
+
+    .work-page__company-presentation--name {
+        font-size: 12px;
+    }
+
+    .work-page__company-presentation--tag {
         background-color: #fff;
         color: #000;
         display: flex;
@@ -53,18 +63,18 @@
 
 }
 
-.work-page__company--data{
+.work-page__company--data {
     display: flex;
     align-items: start;
     flex-direction: column;
 }
 
-.work-page__company--about{
+.work-page__company--about {
     font-size: 32px;
     font-weight: 700;
 }
 
-.work-page__company--description{
+.work-page__company--description {
     color: #fff;
     opacity: 0.8;
     line-height: 1.50;
