@@ -17,6 +17,11 @@ export const Skills: Array<Skill> = [
         skillDescription: '8 years of expering using HTML5 features'
     },
     {
+        iconName: 'ionLogoCss3',
+        technologyName: 'Css3',
+        skillDescription: '8 years of expering using Sass as css3 pre-processor'
+    },
+    {
         iconName: 'ionLogoSass',
         technologyName: 'Sass',
         skillDescription: '8 years of expering using Sass as css3 pre-processor'
@@ -27,8 +32,34 @@ export const Skills: Array<Skill> = [
         skillDescription: '8 years of expering using Javascript'
     },
     {
+        iconName: 'ionLogoWebComponent',
+        technologyName: 'Web Components',
+        skillDescription: '2 years using Web components to build micro-front end applications'
+    },
+    {
         iconName: 'ionLogoNodejs',
         technologyName: 'Node JS',
         skillDescription: '5 years of expering using Node Js to develop backend features'
-    }
+    },
+    {
+        iconName: 'ionLogoReact',
+        technologyName: 'React JS',
+        skillDescription: '3 years of expering using React Js to develop front-end features'
+    },
+    {
+        iconName: 'ionLogoVue',
+        technologyName: 'Vue JS',
+        skillDescription: '1 year of expering using Vue Js to develop front-end features'
+    },
+    {
+        iconName: 'ionLogoAmazon',
+        technologyName: 'AWS',
+        skillDescription: '2 years using aws as deployment platform'
+    },
+    {
+        iconName: 'ionLogoMedium',
+        technologyName: 'Medium',
+        skillDescription: '1 year sharing working experiences'
+    },
+
 ]

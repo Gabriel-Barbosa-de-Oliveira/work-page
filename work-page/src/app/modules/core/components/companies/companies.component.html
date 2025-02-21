@@ -1,34 +1,36 @@
 <section class="work-page__companies" id="work">
     <work-page-section-title [title]="'Work Experience'"></work-page-section-title>
 
-    <div class="work-page__company">
-        <div class="work-page__company-presentation">
-            <div class="work-page__company-presentation--jobtitle">
-                <p>Front-End Developer</p>
-            </div>
+    <div class="work-page__companies--descriptions">
+        <ng-container *ngFor="let company of companies; let i = index">
 
-            <div class="work-page__company-presentation--position">
-                <span>IBM | Remote</span>
-                <span>Nov 2019 - Present</span>
-            </div>
-            <div class="work-page__company-presentation--tag">
-                Full-Time
-            </div>
-        </div>
-        <div class="work-page__company--data">
+            <div class="work-page__company">
 
-            <div class="work-page__company--about">
-                About IBM
+                <div class="work-page__company-presentation">
+                    <div class="work-page__company-presentation--jobtitle">
+                        <p>{{company.jobTitle}}</p>
+                    </div>
+
+                    <div class="work-page__company-presentation--position">
+                        <span class="work-page__company-presentation--name">{{company.companyName}} |
+                            {{company.positionType}}</span>
+                        <span>{{company.initialDate}} - {{company.finalDate}}</span>
+                    </div>
+                    <div class="work-page__company-presentation--tag">
+                        {{company.workingTime}}
+                    </div>
+                </div>
+                <div class="work-page__company--data">
+
+                    <div class="work-page__company--about">
+                        About {{company.companyName}}
+                    </div>
+                    <div class="work-page__company--description">
+                        {{company.jobDescription}}
+                    </div>
+                </div>
             </div>
-            <div class="work-page__company--description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation .
-            </div>
-        </div>
+        </ng-container>
     </div>
+
 </section>
